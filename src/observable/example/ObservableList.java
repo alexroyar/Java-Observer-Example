@@ -15,14 +15,12 @@ import java.util.Observable;
  */
 public class ObservableList extends Observable {
     private ArrayList<String> messages;
-    String str = "";
     public ObservableList(){
         this.messages=new ArrayList<>();
     }
     
     public void add(String str){
         this.messages.add(str);
-        this.str=str;
         setChanged();
         notifyObservers();
     }

@@ -22,7 +22,7 @@ public final class ObservableExample implements Observer{
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new ObservableExample().run();
+        new ObservableExample();
     }
     
     public ObservableExample(){
@@ -30,7 +30,6 @@ public final class ObservableExample implements Observer{
         this.list.addObserver(this);
         this.sc = new Scanner(System.in);
         run();
-
     }
     
     public void run(){
